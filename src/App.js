@@ -6,7 +6,7 @@ import Details from './Details';
 import ThemeContext from './ThemeContext';
 
 const App = () => {
-	const theme = useState("darkblue");
+	const theme = useState("peru");
 	return (
 		<React.StrictMode>
 			<ThemeContext.Provider value={theme}>
