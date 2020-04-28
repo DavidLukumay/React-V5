@@ -1,11 +1,16 @@
-import React from 'react';
+import React, {lazy} from 'react';
 import { navigate } from '@reach/router';
-import Modal from './Modal';
+// import Modal from './Modal';
 import pet from '@frontendmasters/pet';
 import Carousel from './Carousel';
 import ErrorBoundary from './ErrorBoundary';
 import ThemeContext from './ThemeContext';
+import moment from 'moment'
+import _ from 'lodash'
 
+const Modal = lazy(() => import("./Modal"));
+
+console.log(_,moment)
 class Details extends React.Component {
 	// constructor() {
 	// 	super();

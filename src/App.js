@@ -1,12 +1,14 @@
 import React, { useState,lazy,Suspense } from 'react';
 import { render } from 'react-dom';
 import { Router,Link } from '@reach/router';
-import SearchParams from './SearchParams';
+// import SearchParams from './SearchParams';
 // import Details from './Details';
 import ThemeContext from './ThemeContext';
 // import NavBar from './NavBar';
 
+
 const Details = lazy(() => import("./Details"));
+const SearchParams = lazy(() => import("./SearchParams"));
 
 const App = () => {
 	const theme = useState('peru');
